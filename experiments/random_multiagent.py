@@ -1,20 +1,12 @@
 import numpy as np
 
-
-from gym_pybullet_drones.envs.BaseAviary import DroneModel, Physics
-from gym_pybullet_drones.envs.multi_agent_rl.FlockAviary import FlockAviary
-from gym_pybullet_drones.envs.multi_agent_rl.LeaderFollowerAviary import (
-    LeaderFollowerAviary,
-)
-from gym_pybullet_drones.envs.multi_agent_rl.CounterUAS import CounterUAS
-from gym_pybullet_drones.envs.multi_agent_rl.MeetupAviary import MeetupAviary
+from gym_pybullet_cuas.envs.counter_uas import CounterUAS
 from gym_pybullet_drones.envs.single_agent_rl.BaseSingleAgentAviary import (
     ActionType,
     ObservationType,
 )
-from gym_pybullet_drones.utils.Logger import Logger
-
 import shared_constants
+
 
 OBS = ObservationType.KIN
 ACT = ActionType.ONE_D_RPM
